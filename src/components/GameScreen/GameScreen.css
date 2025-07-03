@@ -1,0 +1,36 @@
+.game-container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border: 2px solid #ccc;
+}
+
+.point {
+    position: absolute;
+    width: 40px;
+    height: 41px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 3s;
+}
+
+.point:hover {
+    transform: scale(1.1);
+}
+
+.disappearing {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.countdown {
+    font-size: 0.7em;
+    color: black;
+}
